@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS alunos;
+
+CREATE TABLE alunos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    idade INT NOT NULL,
+    nota1 DECIMAL(5,2) NOT NULL,
+    nota2 DECIMAL(5,2) NOT NULL
+);
