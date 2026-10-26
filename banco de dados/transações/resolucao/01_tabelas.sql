@@ -1,7 +1,0 @@
-DROP TABLE IF EXISTS contas;
-
-CREATE TABLE contas (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    titular VARCHAR(100) NOT NULL,
-    saldo DECIMAL(10,2) NOT NULL
-);

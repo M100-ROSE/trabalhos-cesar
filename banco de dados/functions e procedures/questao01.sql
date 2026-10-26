@@ -1,0 +1,14 @@
+DROP FUNCTION IF EXISTS dobro;
+
+DELIMITER $$
+
+CREATE FUNCTION dobro(numero INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    RETURN numero * 2;
+END $$
+
+DELIMITER ;
+
+SELECT dobro(10) AS Resultado;
