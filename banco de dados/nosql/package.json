@@ -1,0 +1,17 @@
+{
+  "name": "nosql-firestore",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CRUD de alunos no Firebase Cloud Firestore com Firebase Admin SDK",
+  "scripts": {
+    "start": "node src/index.js",
+    "exemplo": "node src/index.js --exemplo"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  }
+}

@@ -12,6 +12,7 @@ Repositório com as atividades e resoluções das matérias do professor **Cesar
 | Banco de Dados | Transações | `banco de dados/transações` |
 | Banco de Dados | Triggers | `banco de dados/triggers` |
 | Banco de Dados | Views | `banco de dados/views` |
+| Banco de Dados | NoSQL (Firestore) | `banco de dados/nosql` |
 
 Cada pasta contém o material de estudo (`contexto.md`) e um script de resolução para cada questão.
 
@@ -48,9 +49,21 @@ trabalhos-cesar/
     ├── triggers/
     │   ├── contexto.md
     │   └── questao01.sql
-    └── views/
+    ├── views/
+    │   ├── contexto.md
+    │   └── ex.sql
+    └── nosql/
         ├── contexto.md
-        └── ex.sql
+        ├── README.md
+        ├── package.json
+        ├── .gitignore
+        ├── serviceAccountKey.example.json
+        └── src/
+            ├── index.js
+            ├── menu.js
+            ├── alunos.js
+            ├── conexao.js
+            └── validacao.js
 ```
 
 ## Como executar
@@ -84,6 +97,22 @@ mysql -u root -p nome_do_banco < "banco de dados/triggers/questao01.sql"
 ```
 
 > Atenção: os scripts recriam as tabelas utilizadas e removem versões anteriores dessas tabelas.
+
+### Firestore (Node.js)
+
+A atividade de NoSQL é uma aplicação Node.js com Firebase Admin SDK. Antes de executar, é necessário salvar a chave da conta de serviço do Firebase como `serviceAccountKey.json` na pasta (o arquivo não vai para o GitHub):
+
+```bash
+cd "banco de dados/nosql"
+npm install
+npm start
+```
+
+Para cadastrar alunos fictícios de uma vez:
+
+```bash
+npm run exemplo
+```
 
 ## Observações
 
