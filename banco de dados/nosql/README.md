@@ -13,6 +13,7 @@ nosql/
 ├── contexto.md                  material da aula
 ├── package.json                 projeto Node.js (ES Modules)
 ├── serviceAccountKey.example.json
+├── capturas/                    prints do CRUD e das consultas
 ├── src/
 │   ├── index.js                 ponto de entrada (menu ou --exemplo)
 │   ├── menu.js                  menu do terminal
@@ -130,6 +131,22 @@ Os alunos de exemplo usam IDs fixos (`exemplo-ana`, `exemplo-bruno` etc.), entã
 | Consulta por período | `where("dataNascimento", ">=", inicio)` e `"<=", fim` |
 
 As datas são armazenadas no formato `AAAA-MM-DD`, o que permite comparar e filtrar períodos diretamente como texto.
+
+## Capturas de tela
+
+As capturas da execução estão em [`capturas/`](./capturas/):
+
+| Arquivo | Ação demonstrada |
+|---|---|
+| [`cadastrar-aluno.png`](./capturas/cadastrar-aluno.png) | CREATE — cadastro de aluno |
+| [`listar-alunos.png`](./capturas/listar-alunos.png) | READ — listagem de alunos |
+| [`atualizar-aluno.png`](./capturas/atualizar-aluno.png) | UPDATE — atualização de aluno |
+| [`excluir-aluno.png`](./capturas/excluir-aluno.png) | DELETE — exclusão de aluno |
+| [`consultar-por-turma.png`](./capturas/consultar-por-turma.png) | Consulta por turma |
+| [`consultar-por-data-nascimento.png`](./capturas/consultar-por-data-nascimento.png) | Consulta por data de nascimento |
+| [`consultar-por-periodo-nascimento.png`](./capturas/consultar-por-periodo-nascimento.png) | Consulta por período de nascimento |
+| [`cadastrar-alunos-exemplo.png`](./capturas/cadastrar-alunos-exemplo.png) | Carga de alunos de exemplo |
+| [`sair.png`](./capturas/sair.png) | Encerramento do menu |
 
 ## Observações
 
